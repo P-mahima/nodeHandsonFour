@@ -1,0 +1,151 @@
+body{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSODyiYFW9KV0LvRITapqoUpsllLMxCzjnrA&usqp=CAU');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.Registercompo{
+  border: 10px solid gray;
+  box-shadow: 2px 2px 5px gray;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  /* flex-direction: column; */
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+}
+.formItem
+{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.formIItem{
+  font-size: 30px;
+}
+label{
+  font-size: 24px;
+  font-weight: bolder;
+}
+.leftRegister{
+  width: 50%;
+  /* height:40vh; */
+  /* background-color: rgb(184, 223, 144); */
+  /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXd4BYpJD9jCn74lV9IJnBbgh0o2i1tpCDoPUyito5fwyyNyRTnzURWvfQhDMi6alKusM&usqp=CAU'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registerbtn{
+  margin: 10px;
+  font-size: 24px;
+  font-weight: bolder;
+  border: 3px solid grey;
+  /* padding: 15px; */
+  padding: 10px;
+  color: blue;
+  background-color: rgb(170, 243, 219);
+  /* padding-bottom: 15px; */
+
+}
+.LinkCompo{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: right;
+  gap: 20px;
+  padding: 40px;
+ 
+}
+.linkItem{
+  color: black;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: blue;
+  text-decoration: none; 
+}
+.loginRegister{
+  font-size: 10px;
+}
+.main{
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.heading{
+  z-index: -1;
+
+}
+.regimg
+{
+  width: 80%;
+  height: 40vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
