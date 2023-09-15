@@ -3,11 +3,9 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 
-
-
 const Login = () => {
  
-    const [data, setData] = useState(
+    const [Data, setData] = useState(
         {
             email: "",
             password: ""
@@ -15,21 +13,17 @@ const Login = () => {
     )
 
     const handleInput = (event) => {
-        setData({ ...data, [event.target.name]: event.target.value })
+        setData({ ...Data, [event.target.name]: event.target.value })
     }
 
     async function handleSubmit(event) {
         event.preventDefault()
-        try {
-            const dataAxios = await axios.post('https://formdata-api.onrender.com/user/login', data)
-            setData({
-                email: "",
-                password: ""
-
-            })
-            console.log(dataAxios.data)
-        }
-        catch (err) { console.log(err) }
+        localStorage.clear()
+        await axios.post('https://formdata-api.onrender.com/user/login', Data)
+          .then((res)=>{console.log(res.data);localStorage.setItem('token', res.data.token)})
+          .catch((err) => console.log(err))
+          console.log(localStorage.getItem('token'))
+       
 
     }
 
